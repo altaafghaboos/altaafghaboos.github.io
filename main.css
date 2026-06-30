@@ -178,10 +178,14 @@ body {
     border-top: 20px solid #1a1510;
     background-color: #ffffff;
     
-    /* 2. THE FIX: Safely pull back against the body padding */
-    margin-left: -50px;
-    margin-right: -50px;
-    width: auto; /* Keeps the element from sizing incorrectly in standard layout calculations */
+    /* THE FIX: Use modern viewport math to force a clean full-bleed layout */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 }
 
 .contact-links {
