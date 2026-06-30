@@ -1,0 +1,16 @@
+header
+
+title + logo
+
+music -> play button and progress
+mixtape link
+
+photos of moi
+
+(buttons) about me + recent post + all posts
+
+(links + explanations) categories -> my cv, my portfolio(completed works), my projects(progress and kinks along the way), an altaaf in the wild!, my tech take aways, general ramblings, writing
+
+(links) list of sub-categories
+
+footer (contact me)

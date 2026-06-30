@@ -1,0 +1,21 @@
+.im-fell-english-sc-regular {
+	font-family: "IM Fell English SC", serif;
+	font-weight: 400;
+  	font-style: normal;
+}
+.special-elite-regular {
+	font-family: "Special Elite", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+}
+.homemade-apple-regular {
+  	font-family: "Homemade Apple", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+}
+.rubik-<uniquifier> {
+	font-family: "Rubik", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+}

@@ -1,0 +1,167 @@
+body {
+	background-color: #ffffff;
+	margin: 50px;
+	margin-top: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.navbar {
+	background-color: #1a1510;
+}
+
+	.nav-container {
+		display: flex;
+	    align-items: center;            /* Center them perfectly vertically */
+	    margin: 0 0 25px 0;
+	    padding: 15px 30px;             /* Gives the navbar its vertical height and edge breathing room */
+	}
+
+	/* Reset and align the navigation links list */
+	.nav-links {
+		display: flex;                  /* Forces links onto a single horizontal line */
+	    gap: 80px;                      /* spacing between each link item */
+	    list-style: none;               /* Removes standard bullet points */
+	    margin: 0px 0px 0px 520px;
+	    padding: 0;
+	}
+
+	/* Step 5: Link Typography Styles */
+	.nav-links a {
+		font-size: 1.2rem;
+		font-family: "Rubik", sans-serif;
+	    font-weight: 700;
+		color: #ffffff;
+	    text-decoration: none;
+	    transition: color 0.2s ease;
+	}
+
+	/* Hover effects */
+	.nav-links a:hover {
+		    color: #e62b1a; /* Clean transition to accent color on hover */
+	}
+
+.header-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 1rem 4rem;
+}
+
+	.title-home{
+	text-decoration: none;
+    display: flex;         
+    flex-direction: column;
+    flex-shrink: 0;
+	margin-left: 100px;
+	}
+
+	.title-sandwich, .title-filling {
+	    font-size: 5rem;
+	    font-family: "Rubik", sans-serif;
+	    font-weight: 750;
+	    text-align: left;
+	    line-height: 0.85;
+	}
+
+	.red-text {color: #e62b1a;}
+	.black-text {color: #222222;}
+
+	.header-logo img {
+		height: 190px;
+		width: 190px;
+		display: block;
+		margin-left: auto;
+		margin-right: 100px;
+	}
+
+.black-bar1 {
+	background-color: #1a1510;
+	height: 1px;
+	margin: 20px 0 20px 0;
+	
+}
+	
+.myself {
+	align-items: center;
+	margin-left: 30px;
+	padding: 0;
+}
+
+.black-bar2 {
+	background-color: #1a1510;
+	height: 20px;
+	margin: 20px 0 20px 0;
+	
+}
+
+.categories {
+	display: grid;
+	grid-template-columns: 1fr 2fr; 
+	gap: 1rem 4rem;	
+}
+
+	.categories a {
+		font-family: "Rubik", sans-serif;
+		font-weight: 700;
+		font-size: 3rem;
+		text-decoration: none;
+	    color: #e62b1a;
+	    transition: color 0.2s ease;
+		margin: 0px 0px 0px 100px;	
+	}
+
+	.categories a:hover {
+		color: #1a1510;
+	}
+
+	.categories p {
+		font-family: "IM Fell English SC", serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		color: #1a1510;
+		margin: 0px 100px 0px 0px;
+	}
+
+.sub-categories {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 1rem 1rem;
+	margin: 0px 0px 20px 0px;
+}
+
+	.sub-categories a {
+		font-family: "IM Fell English SC", sans-serif;
+		font-weight: 400;
+		font-size: 2rem;
+		text-decoration: none;
+	    color: #e62b1a;
+	    transition: color 0.2s ease;	
+	}
+
+	.sub-categories a:hover {
+				color: #1a1510;
+	}
+
+.contact-footer {
+    padding: 20px 20px;
+    border-top: 20px solid #1a1510;
+}
+
+	.contact-links {
+	    text-align: center;
+	    gap: 300px;
+	    margin-top: 5px;
+	}
+
+	.contact-item {
+		font-family: "Rubik", sans-serif;
+		font-weight: 600;
+		font-size: 1.2rem;
+		text-decoration: none;
+	    color: #e62b1a;
+	    transition: color 0.2s ease;
+	}
+
+	.contact-item:hover {
+		color: #1a1510;
+	}
