@@ -1,0 +1,77 @@
+/* --- ARCHIVE DIRECTORY STYLES --- */
+
+.archive-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #1a1510;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.posts-archive-list {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Aligning Date and Content Side-by-Side using Grid */
+.archive-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 part for the date tracking, 3 parts for content titles */
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.post-date {
+    font-family: "IM Fell English SC", serif;
+    font-size: 1.6rem;
+    color: #e62b1a; /* Your signature accent red */
+    font-weight: 400;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1.2;
+}
+
+.post-title:hover {
+    color: #e62b1a;
+}
+
+.post-excerpt {
+    font-family: "IM Fell English SC", serif;
+    font-size: 1.3rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* Minimal interior split-lines between post items */
+.post-divider-line {
+    background-color: #eaeaea;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Highlight style for active nav location links */
+.active-nav {
+    color: #e62b1a !important;
+}
