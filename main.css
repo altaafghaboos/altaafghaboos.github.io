@@ -8,6 +8,9 @@
 body {
 	    background-color: #ffffff; 
     min-height: 100vh;
+    /* 1. THE FIX: Establish a consistent 50px side cushion at the body level */
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* --- NAVIGATION BAR --- */
@@ -173,9 +176,12 @@ body {
 .contact-footer {
 	    padding: 40px 20px;
     border-top: 20px solid #1a1510;
+    background-color: #ffffff;
+    
+    /* 2. THE FIX: Safely pull back against the body padding */
     margin-left: -50px;
     margin-right: -50px;
-    background-color: #ffffff;
+    width: auto; /* Keeps the element from sizing incorrectly in standard layout calculations */
 }
 
 .contact-links {
@@ -224,5 +230,63 @@ body {
     
     .nav-links a {
 	        font-size: 1rem; /* Slightly smaller text for mobile baselines */
+    }
+}
+
+/* --- RESPONSIVE FIXES FOR MOBILE --- */
+@media (max-width: 600px) {
+	    body {
+	        /* Drop body padding down on small phone screens */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-footer {
+	        /* Match the reduced mobile body padding so it doesn't spill on phones */
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    .contact-links {
+	        /* Stack email, github, and linkedin links vertically if mobile screen space is tiny */
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+	    .header-container {
+	        /* Drop the 5rem size down so it fits smaller screens */
+        --title-size: 3.5rem;
+    }
+    
+    .title-sandwich, .title-filling {
+	        font-size: var(--title-size, 3.5rem);
+    }
+}
+
+@media (max-width: 600px) {
+	    .header-container {
+	        /* Stack the text layout and the logo vertically instead of side-by-side */
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+
+    .title-home {
+	        margin-left: 0; /* Clear desktop-specific margins */
+        align-items: center; /* Center the vertical text stack */
+    }
+
+    .title-sandwich, .title-filling {
+	        font-size: 2.2rem; /* A perfect size for mobile phone screens */
+        text-align: center;
+    }
+
+    .header-logo img {
+	        margin-right: auto; /* Center the logo completely on mobile viewports */
+        height: 120px;      /* Scale the image down so it isn't overpowering */
+        width: 120px;
     }
 }
