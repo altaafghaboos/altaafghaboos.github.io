@@ -80,15 +80,15 @@ body {
 .black-bar1 {
 	background-color: #1a1510;
     height: 1px;
-    margin: 20px auto;
-    max-width: 100%;
+    margin: 20px -50px;
+    width: auto;
 }
 
 .black-bar2 {
 	    background-color: #1a1510;
     height: 20px;
-    margin: 25px auto;
-    max-width: 100%;
+    margin: 25px -50px;
+    width: auto;
 }
     
 /* --- MAIN CONTENT & PORTFOLIO LINKS --- */
@@ -196,4 +196,33 @@ body {
 
 .contact-item:hover {
 	    color: #1a1510;
+}
+
+/* --- RESPONSIVE FIXES FOR SMALLER SCREENS --- */
+@media (max-width: 1024px) {
+	    .nav-container {
+	        /* Reduce the heavy 100px padding so it doesn't crush the links */
+        padding: 15px 30px; 
+        /* Centers the links if the screen gets tight */
+        justify-content: center; 
+    }
+
+    .nav-links {
+	        /* Drop the 80px gap down to a safe, legible mobile distance */
+        gap: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+	    .nav-container {
+	        padding: 15px 15px;
+    }
+    
+    .nav-links {
+	        gap: 20px;
+    }
+    
+    .nav-links a {
+	        font-size: 1rem; /* Slightly smaller text for mobile baselines */
+    }
 }
