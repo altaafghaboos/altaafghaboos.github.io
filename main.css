@@ -6,9 +6,7 @@
 }
 
 body {
-	    background-color: #ffffff;
-    /* Clean outer frame padding instead of breaking margins */
-    padding: 0 50px 50px 50px; 
+	    background-color: #ffffff; 
     min-height: 100vh;
 }
 
@@ -69,7 +67,7 @@ body {
 	    font-size: 4rem;
     font-family: "Rubik", sans-serif;
     /* Note: 750 is an invalid numerical weight value for web typography formats; scaled to 700 */
-    font-weight: 700; 
+    font-weight: 700;
     text-align: left;
     line-height: 0.85;
 }
@@ -80,17 +78,17 @@ body {
 
 /* --- SEPARATORS --- */
 .black-bar1 {
-	    background-color: #1a1510;
+	background-color: #1a1510;
     height: 1px;
     margin: 20px auto;
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 .black-bar2 {
 	    background-color: #1a1510;
     height: 20px;
     margin: 25px auto;
-    max-width: 1300px;
+    max-width: 100%;
 }
     
 /* --- MAIN CONTENT & PORTFOLIO LINKS --- */
@@ -116,7 +114,7 @@ body {
     /* Controls the exact vertical gap between the link and the paragraph */
     gap: 0.5rem;             
     
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto 30px auto; /* Added a bottom margin to space out your different categories */
     align-items: flex-start;  /* Aligns both the link and paragraph flush to the left edge */
 }
@@ -145,7 +143,8 @@ body {
     color: #1a1510;
     
     /* OPTIONAL: Matches the link's padding if you want them perfectly aligned on the left edge */
-    padding-left: 50px; 
+    padding-left: 50px;
+	padding-right: 50px; 
 }
 
 /* --- SUB CATEGORIES --- */
@@ -153,7 +152,7 @@ body {
 	    display: flex;                  /* FIXED: Flexbox is much safer for layout text links than 7 explicit grid columns */
     justify-content: center;
     gap: 3rem;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 30px auto;
 }
 
