@@ -152,12 +152,19 @@ body {
 
 /* --- SUB CATEGORIES --- */
 .sub-categories {
-	    display: flex;                  /* FIXED: Flexbox is much safer for layout text links than 7 explicit grid columns */
+	display: flex;                  
     justify-content: center;
-    gap: 3rem;
+    
+    /* THE FIX: Allows items to break onto a new row on tiny screens */
+    flex-wrap: wrap; 
+    
+    /* Controls the space between rows AND columns seamlessly */
+    gap: 1.5rem 3rem; 
+    
     max-width: 100%;
     margin: 30px auto;
 }
+
 
 .sub-categories a {
 	    font-family: "IM Fell English SC", serif; /* FIXED: 'IM Fell English SC' is a Serif font, not sans-serif */
@@ -288,3 +295,5 @@ body {
         gap: 15px;
     }
 }
+
+@media ()

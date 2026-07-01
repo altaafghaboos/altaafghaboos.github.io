@@ -51,17 +51,29 @@
 
 			<br>
 			<h1 class="post-title" href="">
-			Post Title</h1>
+			PyCryptoDome Audit</h1>
 			
-			<h2><a class="post-tag" href="">
-			post tag</a></h2>
+			<h2><a class="post-tag" href="../v-hunting.html">
+			v-hunting</a></h2>
+			<h2><a class="post-tag" href="../v-patching.html">
+			v-patching</a></h2>
 			
 			<p class="the-blogpost">
-			Talking about what is inside theb lgosnv uobviou 9ufboc u9ebncwb9qw9 0hciocnqkx eu9hc c-whiuebceoi0 d 
-			e0he08ce -</p>
+			On the first day of Project Stormwing, only 3 hours after launch, we caught our first vulnerability.
+			<br><br>
+			PyCryptoDome is a common python library that's used in over 8,000 open-source software around the world, and the vulnerability we caught had been lying there for 8 years.
+			<br><br>
+			Basically, there was a mistake in the parameters. The library uses Ed25519, and from NIST SP 800-38D, plaintext input data cannot be more than 2^39 - 256 bits. However, 
+			in the parameters, user input was indicated to be in bytes, and the check for the size of the input was checking that the input was not to be more than 2^39 - 256 
+			<em>bytes</em>. 
+			<br><br>
+			We flagged it as CWE-1240 (use of cryptographic primitive with a risky implementation), and patched it simply by adding "//8" to the check (division operation done on the 
+			number).
+			<br><br>
+			Again, officially it wasn't me alone who found it as Logan was helping us through it, but still, for this one my name is on the documentation ;)</p>
 			
 			<br><br><span class="date-post">
-			august 28, 2008</span>
+			june 27, 2026</span>
 			
 			<br><br><br><br>
        		
